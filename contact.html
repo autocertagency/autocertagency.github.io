@@ -46,10 +46,12 @@
         <form action="//formspree.io/kim.nguyen@automotivecertificationagency.com"
           method="POST">
         <b>Name:</b>
-        <br /><input type="text" name="name">
-        <br /><b>Email:</b>
-        <br /><input type="email" name="_replyto">
-        <input type="submit" value="Send">
+        <br /><input type="text" name="name" required aria-required="true">
+        <br /><br /><b>Email:</b>
+        <br /><input type="email" name="_replyto" required aria-required="true">
+        <br /><br /><b>Message:</b>
+        <br /><textarea name="message" rows="5" required aria-required="true"></textarea>
+        <br /><br /><input type="submit" value="Send">
         </form>
 
 
