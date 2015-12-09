@@ -9,7 +9,7 @@ html, body {
   padding: 0;
 }
 
-p {
+p, li {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -17,9 +17,10 @@ p {
 
 .header {
   height: 50vh;
-  background-color: #00b3a5;
+  background-color: #00998d;
   padding-left: 20%;
   padding-right: 20%;
+  position: relative;
 }
 
 .header h1 {
@@ -28,12 +29,13 @@ p {
   font-weight: 800;
   color: #FFF;
   text-align: center;
+  position: absolute;
+  top: 20vh;
 }
 
 .nav {
   background-color: #98b3b1;
-  color: #FFF;
-  height: 80px;
+  height: 60px;
 }
 
 .nav ul {
@@ -44,12 +46,18 @@ p {
 
 .nav li {
   width: 120px;
+  display: inline;
+}
+
+.nav a {
+  color: #FFF;
 }
 
 .body {
   padding: 15%;
+  padding-top: 30px;
 }
 
 a {
-  color: #00b3a5;
+  color: #00998d;
 }
