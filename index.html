@@ -82,7 +82,7 @@
 
   About Us
 
-  
+
 
   Contact us
 
@@ -93,6 +93,27 @@
 
   Tel:
   +61 438141016
+
+
+
+<script>
+$(function() {
+  $(window).scroll(function() {
+      var top = $(window).scrollTop();
+      var headerheight = $(".header").height();
+
+      if (top > headerheight) {
+      $(".nav").css("position", "fixed");
+      $(".nav").css("top", "0px");
+      $(".nav").css("width", "100vw");
+      $(".body").css("margin-top", "90px");
+    } else {
+      $(".nav").css("position", "static");
+      $(".body").css("margin-top", "auto");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
