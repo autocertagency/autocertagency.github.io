@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automotive Certification Agency</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+</head>
+<body>
+
+<!--####### HEADER ###########-->
+  <div class="container-fluid header">
+    <h1>Automotive Certification Agency</h1>
+  </div>
+
+  <div class="container-fluid nav">
+    <ul>
+      <li><a href="http://www.automotivecertificationagency.com" title="Home" class="active">Home</a></li>
+      <li><a href="about.html" title="About Us">About Us</a></li>
+      <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
+    </ul>
+  </div>
+
+
+
+  <!--######### CONTACT US CONTENT #######-->
+  <div class="container-fluid body">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+
+        Kim L Nguyen
+        <br /><br />
+        <b>Email:</b>
+        <br /><a href="mailto:kim.nguyen@automotivecertificationagency.com" target="_blank">kim.nguyen@automotivecertificationagency.com</a>
+        <br /><br />
+        <b>Tel:</b>
+        <br />+61 438141016
+      </div>
+      <div class="col-xs-12 col-sm-6">
+
+        <form action="//formspree.io/kim.nguyen@automotivecertificationagency.com"
+          method="POST">
+        <b>Name:</b>
+        <br /><input type="text" name="name">
+        <br /><b>Email:</b>
+        <br /><input type="email" name="_replyto">
+        <input type="submit" value="Send">
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="footer">
+
+  </div>
+
+
+<script>
+
+document.getElementById("footer").innerHTML =
+  "<p>Copyright &copy;  " + new Date().getFullYear() + " Automotive Certification Agency</p>";
+
+$(function() {
+  $(window).scroll(function() {
+      var top = $(window).scrollTop();
+      var headerheight = $(".header").height();
+
+      if (top > headerheight) {
+      $(".nav").css("position", "fixed");
+      $(".nav").css("top", "0px");
+      $(".nav").css("width", "100vw");
+      $(".body").css("margin-top", "62px");
+    } else {
+      $(".nav").css("position", "static");
+      $(".body").css("margin-top", "auto");
+    }
+  });
+});
+</script>
+
+</body>
+</html>

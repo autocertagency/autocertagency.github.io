@@ -113,23 +113,33 @@
   </ul>
 
   <h3>We are here to assist in all certification matters for Australia.</h3>
+</div>
+
+<div class="container-fluid" id="footer">
+
+</div>
+
 
 <script>
-$(function() {
-  $(window).scroll(function() {
-      var top = $(window).scrollTop();
-      var headerheight = $(".header").height();
 
-      if (top > headerheight) {
-      $(".nav").css("position", "fixed");
-      $(".nav").css("top", "0px");
-      $(".nav").css("width", "100vw");
-      $(".body").css("margin-top", "62px");
-    } else {
-      $(".nav").css("position", "static");
-      $(".body").css("margin-top", "auto");
-    }
-  });
+document.getElementById("footer").innerHTML =
+"<p>Copyright &copy;  " + new Date().getFullYear() + " Automotive Certification Agency</p>";
+
+$(function() {
+$(window).scroll(function() {
+    var top = $(window).scrollTop();
+    var headerheight = $(".header").height();
+
+    if (top > headerheight) {
+    $(".nav").css("position", "fixed");
+    $(".nav").css("top", "0px");
+    $(".nav").css("width", "100vw");
+    $(".body").css("margin-top", "62px");
+  } else {
+    $(".nav").css("position", "static");
+    $(".body").css("margin-top", "auto");
+  }
+});
 });
 </script>
 
