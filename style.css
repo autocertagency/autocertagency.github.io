@@ -59,6 +59,14 @@ p, li {
   font-size: 24px;
 }
 
+.nav a:hover {
+  text-decoration: none;
+}
+
+.nav li:hover {
+  background-color: #000;
+}
+
 .body {
   padding: 15%;
   padding-top: 30px;
