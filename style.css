@@ -32,6 +32,7 @@ p, li {
   color: #FFF;
   position: absolute;
   top: 20vh;
+  display: block;
 }
 
 .nav {
