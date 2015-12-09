@@ -53,8 +53,8 @@ p, li {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  padding: 14px 20px;
-  font-size: 24px;
+  padding: 16px 20px;
+  font-size: 20px;
   display: block;
   font-family: 'Open Sans', sans-serif;
 }
@@ -74,7 +74,7 @@ a {
 }
 
 #footer {
-  font-size: 12px;
+  font-size: 9px;
   margin-top: 30px;
   text-align: center;
 }
