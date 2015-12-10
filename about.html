@@ -125,8 +125,6 @@ $(function() {
   $(window).scroll(function() {
       var top = $(window).scrollTop();
       var headerheight = $(".header").height();
-      var titleheight = $("#title").height();
-      var abovetitle = ( headerheight - titleheight ) / 2;
 
       if (top > headerheight) {
       $(".nav").css("position", "fixed");
