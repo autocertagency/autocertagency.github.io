@@ -21,6 +21,8 @@ p, li {
   min-height: 200px;
   background-color: #00998d;
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .header h1 {
@@ -98,7 +100,6 @@ form input, form textarea {
 form textarea {
   border-width: 2px;
   border-color: #eeeeee;
-  border-style: inset;
 }
 
 #footer p {
