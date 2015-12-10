@@ -18,25 +18,13 @@
     <h1 id="title">Automotive Certification Agency</h1>
   </div>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="http://www.automotivecertificationagency.com" title="Home" class="active">Home</a></li>
-        <li><a href="about.html" title="About Us">About Us</a></li>
-        <li><a href="contact.html" title="Contact Us">Contact Us</a></li>
-      </ul>
-    </div>
+  <div class="container-fluid nav">
+    <ul>
+      <li><a href="http://www.automotivecertificationagency.com" title="Home">Home</a></li>
+      <li><a href="about.html" title="About Us">About Us</a></li>
+      <li><a href="contact.html" title="Contact Us" class="active">Contact Us</a></li>
+    </ul>
   </div>
-</nav>
 
 
 
@@ -111,12 +99,12 @@
         var abovetitle = ( headerheight - titleheight ) / 2;
 
         if (top > headerheight) {
-        $(".navbar").css("position", "fixed");
-        $(".navbar").css("top", "0px");
-        $(".navbar").css("width", "100vw");
+        $(".nav").css("position", "fixed");
+        $(".nav").css("top", "0px");
+        $(".nav").css("width", "100vw");
         $(".body").css("margin-top", "62px");
       } else {
-        $(".navbar").css("position", "static");
+        $(".nav").css("position", "static");
         $(".body").css("margin-top", "auto");
       }
 
