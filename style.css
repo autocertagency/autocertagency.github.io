@@ -72,7 +72,7 @@ p, li {
   background-color: #00ccbc;
 }
 
-a.active:hover {
+.nav li a.active:hover {
   background-color: #00ccbc;
 }
 
@@ -110,7 +110,7 @@ form input, form textarea {
   font-size: 16px;
   background-color: #00998d;
   border-width: 0;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 50%;
   padding-top: 8px;
   padding-bottom: 8px;
