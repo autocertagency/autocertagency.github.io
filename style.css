@@ -20,8 +20,6 @@ p, li {
   height: 50vh;
   min-height: 200px;
   background-color: #00998d;
-  padding-left: 5%;
-  padding-right: 5%;
   position: relative;
 }
 
@@ -35,6 +33,8 @@ p, li {
   display: block;
   width: 100%;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .nav {
