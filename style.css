@@ -37,16 +37,6 @@ p, li {
   padding-right: 5%;
 }
 
-.outside-centered {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.centered {
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
 .nav {
   background-color: #004d47;
   z-index: 99999;
@@ -82,7 +72,7 @@ p, li {
   background-color: #00ccbc;
 }
 
-.active:hover {
+a.active:hover {
   background-color: #00ccbc;
 }
 
