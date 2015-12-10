@@ -70,22 +70,40 @@
 document.getElementById("footer").innerHTML =
   "<p>Copyright &copy;  " + new Date().getFullYear() + " Automotive Certification Agency</p>";
 
-$(function() {
-  $(window).scroll(function() {
-      var top = $(window).scrollTop();
-      var headerheight = $(".header").height();
+  $(function() {
+    $(window).scroll(function() {
+        var top = $(window).scrollTop();
+        var headerheight = $(".header").height();
+        var titleheight = $("#title").height();
+        var abovetitle = ( headerheight - titleheight ) / 2;
 
-      if (top > headerheight) {
-      $(".nav").css("position", "fixed");
-      $(".nav").css("top", "0px");
-      $(".nav").css("width", "100vw");
-      $(".body").css("margin-top", "62px");
-    } else {
-      $(".nav").css("position", "static");
-      $(".body").css("margin-top", "auto");
-    }
+        if (top > headerheight) {
+        $(".nav").css("position", "fixed");
+        $(".nav").css("top", "0px");
+        $(".nav").css("width", "100vw");
+        $(".body").css("margin-top", "62px");
+      } else {
+        $(".nav").css("position", "static");
+        $(".body").css("margin-top", "auto");
+      }
+
+    });
+
+    $(window).resize(function() {
+      var headerheight = $(".header").height();
+      var titleheight = $("#title").height();
+      var abovetitle = ( headerheight - titleheight ) / 2;
+
+      $("#title").css("margin-top", abovetitle);
+    });
+
+    var headerheight = $(".header").height();
+    var titleheight = $("#title").height();
+    var abovetitle = ( headerheight - titleheight ) / 2;
+
+    $("#title").css("margin-top", abovetitle);
+
   });
-});
 </script>
 
 </body>
