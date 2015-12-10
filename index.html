@@ -52,7 +52,7 @@
   <p>Our specialty covers:
     <ul>
       <li>Certification for passenger, commercial, truck, bus and special enthusiast vehicles. This includes vehicle of MA, MB, MC, MD, ME, NA, NB, NC, and its subdivision categories.</li>
-      <li>Completed certification for GM electric passenger vehicle namely VOLT (<a href="http://rvcs-prodweb.dot.gov.au/pls/wwws/pubrvcs.view_app_details?sCertID=43723&sMakeModel=HOLDEN+VOLT" target="_blank">http://rvcs-prodweb.dot.gov.au/pls/wwws/pubrvcs.view_app_details?sCertID=43723&sMakeModel=HOLDEN+VOLT</a>)</li>
+      <li>Completed certification for GM electric passenger vehicle namely VOLT (<a href="http://rvcs-prodweb.dot.gov.au/pls/wwws/pubrvcs.view_app_details?sCertID=43723&sMakeModel=HOLDEN+VOLT" target="_blank" class="link-wrap">http://rvcs-prodweb.dot.gov.au/pls/wwws/pubrvcs.view_app_details?sCertID=43723&sMakeModel=HOLDEN+VOLT</a>)</li>
       <li>Representing Holden and ISUZU in Federal Chamber of Automotive Industries (FCAI) for various review in automotive manufacturers, import manufacturers, commercial vehicles and heavy truck/buses in Australia</li>
       <li>Certification of aftermarket and accessories including body builders for commercial vehicles</li>
       <li>Negotiation and resolution with DOTARS on all approval issues</li>
@@ -88,8 +88,8 @@
 
   <script>
 
-  //document.getElementById("footer").innerHTML =
-  //"<p>Copyright &copy;  " + new Date().getFullYear() + " Automotive Certification Agency</p>";
+  document.getElementById("footer").innerHTML =
+  "<p>Copyright &copy;  " + new Date().getFullYear() + " Automotive Certification Agency</p>";
 
   $(function() {
     $(window).scroll(function() {
@@ -121,7 +121,7 @@
     var headerheight = $(".header").height();
     var titleheight = $("#title").height();
     var abovetitle = ( headerheight - titleheight ) / 2;
-    
+
     $("#title").css("margin-top", abovetitle);
 
   });
