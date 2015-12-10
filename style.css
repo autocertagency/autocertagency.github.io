@@ -95,6 +95,7 @@ a {
 
 form input, form textarea {
   width: 80%;
+  min-width: 230px;
   padding: 5px;
   margin: 3px;
   margin-left: auto;

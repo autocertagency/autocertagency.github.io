@@ -10,6 +10,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="jquery.sticky.js"></script>
 </head>
 <body>
 
@@ -92,21 +93,23 @@
   "<p>Copyright &copy;  " + new Date().getFullYear() + " Automotive Certification Agency</p>";
 
   $(function() {
-    $(window).scroll(function() {
-        var top = $(window).scrollTop();
-        var headerheight = $(".header").height();
-        var titleheight = $("#title").height();
-        var abovetitle = ( headerheight - titleheight ) / 2;
+    //$(window).scroll(function() {
+      //  var top = $(window).scrollTop();
+        //var headerheight = $(".header").height();
+//        var titleheight = $("#title").height();
+  //      var abovetitle = ( headerheight - titleheight ) / 2;
+//
+  //      if (top > headerheight) {
+    //    $(".nav").css("position", "fixed");
+//        $(".nav").css("top", "0px");
+  //      $(".nav").css("width", "100vw");
+    //    $(".body").css("margin-top", "62px");
+//      } else {
+  //      $(".nav").css("position", "static");
+    //    $(".body").css("margin-top", "auto");
+    //  }
 
-        if (top > headerheight) {
-        $(".nav").css("position", "fixed");
-        $(".nav").css("top", "0px");
-        $(".nav").css("width", "100vw");
-        $(".body").css("margin-top", "62px");
-      } else {
-        $(".nav").css("position", "static");
-        $(".body").css("margin-top", "auto");
-      }
+    $(".nav").sticky({topSpacing:0});
 
     });
 
