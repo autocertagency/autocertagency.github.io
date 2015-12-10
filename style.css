@@ -36,6 +36,7 @@ p, li {
 
 .nav {
   background-color: #004d47;
+  z-index: 99999;
 }
 
 .nav ul {
