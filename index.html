@@ -109,7 +109,9 @@
       }
 
     });
+  });
 
+  $(function() {
     $(window).resize(function() {
       var headerheight = $(".header").height();
       var titleheight = $("#title").height();
@@ -117,7 +119,9 @@
 
       $("#title").css("margin-top", abovetitle);
     });
+  });
 
+  $(function() {
     var headerheight = $(".header").height();
     var titleheight = $("#title").height();
     var abovetitle = ( headerheight - titleheight ) / 2;
