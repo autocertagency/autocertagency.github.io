@@ -18,9 +18,9 @@ p, li {
 
 .header {
   height: 50vh;
-  min-height: 200px;
+  min-height: 250px;
+  max-height: 600px;
   background-color: #00998d;
-  position: relative;
   padding-left: 0;
   padding-right: 0;
 }
@@ -30,13 +30,12 @@ p, li {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 800;
   color: #FFF;
-  position: absolute;
-  top: 20vh;
   display: block;
   width: 100%;
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
+  margin-top: 20%
 }
 
 .nav {
@@ -75,7 +74,7 @@ p, li {
 }
 
 .active:hover {
-  background-color: #00ccbc;  
+  background-color: #00ccbc;
 }
 
 .body {
