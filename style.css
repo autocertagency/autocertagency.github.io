@@ -74,6 +74,10 @@ p, li {
   background-color: #00ccbc;
 }
 
+.active:hover {
+  background-color: #00ccbc;  
+}
+
 .body {
   padding: 15%;
   padding-top: 30px;
