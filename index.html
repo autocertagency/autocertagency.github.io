@@ -19,7 +19,7 @@
     <h1 id="title">Automotive Certification Agency</h1>
   </div>
 
-  <div class="container-fluid nav sticker">
+  <div class="container-fluid nav">
     <ul>
       <li><a href="http://www.automotivecertificationagency.com" title="Home" class="active">Home</a></li>
       <li><a href="about.html" title="About Us">About Us</a></li>
@@ -93,25 +93,23 @@
   "<p>Copyright &copy;  " + new Date().getFullYear() + " Automotive Certification Agency</p>";
 
   $(function() {
-    //$(window).scroll(function() {
-      //  var top = $(window).scrollTop();
-        //var headerheight = $(".header").height();
-//        var titleheight = $("#title").height();
-  //      var abovetitle = ( headerheight - titleheight ) / 2;
-//
-  //      if (top > headerheight) {
-    //    $(".nav").css("position", "fixed");
-//        $(".nav").css("top", "0px");
-  //      $(".nav").css("width", "100vw");
-    //    $(".body").css("margin-top", "62px");
-//      } else {
-  //      $(".nav").css("position", "static");
-    //    $(".body").css("margin-top", "auto");
-    //  }
+    $(window).scroll(function() {
+        var top = $(window).scrollTop();
+        var headerheight = $(".header").height();
+        var titleheight = $("#title").height();
+        var abovetitle = ( headerheight - titleheight ) / 2;
 
-    $(".sticker").sticky({topSpacing:0});
+        if (top > headerheight) {
+        $(".nav").css("position", "fixed");
+        $(".nav").css("top", "0px");
+        $(".nav").css("width", "100vw");
+        $(".body").css("margin-top", "62px");
+      } else {
+        $(".nav").css("position", "static");
+        $(".body").css("margin-top", "auto");
+      }
 
-    //});
+    });
 
     $(window).resize(function() {
       var headerheight = $(".header").height();
