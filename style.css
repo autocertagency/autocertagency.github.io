@@ -84,6 +84,7 @@ p, li {
 
 .active {
   background-color: #00ccbc;
+  color: #FFF;
 }
 
 .nav li a.active:hover {
@@ -98,6 +99,19 @@ p, li {
   border-radius: 0;
   border-width: 0;
   line-height: 48px;
+}
+
+.open>.dropdown-toggle.btn-primary {
+  background-color: #004d47;
+  border-width: 0;
+}
+
+.dropdown ul.dropdown-menu li {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 500px) {

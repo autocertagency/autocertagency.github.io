@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Automotive Certification Agency</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -27,6 +27,17 @@
   </div>
 
 
+<!--######## HAMBURGER MENU FOR MOBILE ############-->
+  <div class="dropdown" style="width: 100vw;">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="width: 100%;">
+      <i class="fa fa-bars"></i>
+    </button>
+    <ul class="dropdown-menu" style="width: 100%; text-align: center;">
+      <li><a href="http://www.automotivecertificationagency.com">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+  </div>
 
 
 
@@ -70,43 +81,55 @@
 
 <script>
 
+
+// ########### COPYRIGHT DISCLAIMER ################
 document.getElementById("footer").innerHTML =
-  "<p>Copyright &copy;  " + new Date().getFullYear() + " Automotive Certification Agency</p>";
+"<p>Copyright &copy;  " + new Date().getFullYear() + " Automotive Certification Agency</p>";
 
-  $(function() {
-    $(window).scroll(function() {
-        var top = $(window).scrollTop();
-        var headerheight = $(".header").height();
-        var titleheight = $("#title").height();
-        var abovetitle = ( headerheight - titleheight ) / 2;
 
-        if (top > headerheight) {
-        $(".nav").css("position", "fixed");
-        $(".nav").css("top", "0px");
-        $(".nav").css("width", "100vw");
-        $(".body").css("margin-top", "62px");
-      } else {
-        $(".nav").css("position", "static");
-        $(".body").css("margin-top", "auto");
-      }
-
-    });
-
-    $(window).resize(function() {
+// ########## STICK TO TOP NAVIGATION BAR ###############
+$(function() {
+  $(window).scroll(function() {
+      var top = $(window).scrollTop();
       var headerheight = $(".header").height();
-      var titleheight = $("#title").height();
-      var abovetitle = ( headerheight - titleheight ) / 2;
 
-      $("#title").css("margin-top", abovetitle);
-    });
+      if (top > headerheight) {
+      $(".nav").css("position", "fixed");
+      $(".nav").css("top", "0px");
+      $(".nav").css("width", "100vw");
+      $(".dropdown").css("position", "fixed");
+      $(".dropdown").css("top", "0px");
+      $(".dropdown").css("width", "100vw");
+      $(".body").css("margin-top", "62px");
+    } else {
+      $(".nav").css("position", "static");
+      $(".dropdown").css("position", "relative");
+      $(".body").css("margin-top", "auto");
+    }
 
+  });
+});
+
+// ######### HEADER TITLE CENTERING #############
+$(function() {
+  $(window).resize(function() {
     var headerheight = $(".header").height();
     var titleheight = $("#title").height();
     var abovetitle = ( headerheight - titleheight ) / 2;
 
     $("#title").css("margin-top", abovetitle);
-
   });
+});
+
+$(function() {
+  var headerheight = $(".header").height();
+  var titleheight = $("#title").height();
+  var abovetitle = ( headerheight - titleheight ) / 2;
+
+  $("#title").css("margin-top", abovetitle);
+
+});
+
 </script>
 
 </body>
