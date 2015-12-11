@@ -189,6 +189,12 @@ form input, form textarea {
   }
 }
 
+@media only screen and (max-width: 300px) {
+  form input, form textarea {
+    min-width: 0;
+  }
+}
+
 .send-button {
   color: #FFF;
   font-weight: 700;
