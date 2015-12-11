@@ -88,6 +88,7 @@ p, li {
 .nav li a:hover, .dropdown-menu>li>a:hover {
   text-decoration: none;
   background-color: #000;
+  color: #FFF;
 }
 
 .active, .dropdown-menu>li>a.active {
