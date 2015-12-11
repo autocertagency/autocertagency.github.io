@@ -58,6 +58,11 @@ p, li {
   border-radius: 0;
 }
 
+.dropdown-menu {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .nav ul {
   list-style-type: none;
   margin: 0;
