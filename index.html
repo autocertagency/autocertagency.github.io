@@ -109,16 +109,18 @@
     $(window).scroll(function() {
         var top = $(window).scrollTop();
         var headerheight = $(".header").height();
-        var titleheight = $("#title").height();
-        var abovetitle = ( headerheight - titleheight ) / 2;
 
         if (top > headerheight) {
         $(".nav").css("position", "fixed");
         $(".nav").css("top", "0px");
         $(".nav").css("width", "100vw");
+        $(".dropdown").css("position", "fixed");
+        $(".dropdown").css("top", "0px");
+        $(".dropdown").css("width", "100vw");
         $(".body").css("margin-top", "62px");
       } else {
         $(".nav").css("position", "static");
+        $(".dropdown").css("position", "static");
         $(".body").css("margin-top", "auto");
       }
 
