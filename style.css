@@ -61,6 +61,7 @@ p, li {
 .dropdown-menu {
   padding-top: 0;
   padding-bottom: 0;
+  border-width: 0;
 }
 
 .nav ul {
@@ -118,7 +119,11 @@ p, li {
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 42px;
+  color: #FFF;
+}
+
+.dropdown-menu>li>a {
   color: #FFF;
 }
 
