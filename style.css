@@ -87,6 +87,16 @@ p, li {
   background-color: #00ccbc;
 }
 
+.dropdown {
+  height: 60px;
+  font-size: 20px;
+  background-color: #004d47;
+  z-index: 99999;
+  border-radius: 0;
+  border-width: 0;
+  line-height: 48px;
+}
+
 @media only screen and (max-width: 500px) {
   .nav {
     display: none;
