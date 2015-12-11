@@ -54,6 +54,8 @@ p, li {
 .nav, .dropdown-menu {
   background-color: #004d47;
   z-index: 99999;
+  margin-top: 0;
+  border-radius: 0;
 }
 
 .nav ul {
