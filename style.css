@@ -118,6 +118,10 @@ p, li {
   border-width: 0;
 }
 
+.btn-primary:active:focus {
+  background-color: #004d47;
+}
+
 .dropdown ul.dropdown-menu li {
   text-transform: uppercase;
   font-weight: 700;
