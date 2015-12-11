@@ -87,7 +87,7 @@ p, li {
   background-color: #00ccbc;
 }
 
-.dropdown {
+.dropdown button.btn {
   height: 60px;
   font-size: 20px;
   background-color: #004d47;
