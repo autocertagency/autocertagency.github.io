@@ -103,10 +103,13 @@ p, li {
   height: 60px;
   font-size: 20px;
   background-color: #004d47;
-  z-index: 99999;
   border-radius: 0;
   border-width: 0;
   line-height: 48px;
+}
+
+.dropdown button.btn, .dropdown, .dropdown-menu {
+  z-index: 99999;
 }
 
 .open>.dropdown-toggle.btn-primary, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
